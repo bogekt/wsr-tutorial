@@ -1,0 +1,11 @@
+{
+    "appName": "wsr-tutorial-app",
+    "notifications": {
+      "slack_channels": [
+        "fedops-urgent-default"
+      ]
+    },
+    "deploy_annotations": [
+      "wsr-tutorial-app"
+    ]
+  }

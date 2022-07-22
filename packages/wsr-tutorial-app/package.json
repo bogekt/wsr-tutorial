@@ -1,0 +1,84 @@
+{
+  "name": "@wix/wsr-tutorial-app",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Yevhenii Borys",
+    "email": "yevheniibo@wix.com"
+  },
+  "scripts": {
+    "start": "yoshi start",
+    "build": "yoshi build",
+    "test": "yoshi test",
+    "lint": "yoshi lint"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "yarn lint"
+  },
+  "dependencies": {
+    "@wix/bootstrap-hot-loader": "^6.0.0",
+    "@wix/http-client": "^1.483.0",
+    "@wix/wix-bootstrap-greyhound": "^1.0.884",
+    "@wix/wix-bootstrap-hadron": "^1.0.1888",
+    "@wix/wix-bootstrap-ng": "^1.0.5558",
+    "@wix/wix-bootstrap-renderer": "^1.0.677",
+    "@wix/wix-express-csrf": "^1.0.1373",
+    "@wix/wix-express-require-https": "^1.0.979",
+    "@wix/wix-i18n-config": "^5.0.6",
+    "@wix/wix-node-i18n-cache": "0.0.52",
+    "express": "^4.17.2",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "source-map-support": "^0.5.11"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.5",
+    "@types/express": "^4.17.2",
+    "@types/node": "^16.0.0",
+    "@types/react": "^16.9.15",
+    "@types/react-dom": "^16.9.5",
+    "@wix/fedops-logger": "^5.0.0",
+    "@wix/jest-yoshi-preset": "^6.0.0",
+    "@wix/wix-bootstrap-testkit": "^1.1.5419",
+    "@wix/wix-common-aspects": "^1.771.6",
+    "@wix/wix-config-emitter": "^1.0.2027",
+    "@wix/yoshi": "^6.0.0",
+    "@wix/yoshi-style-dependencies": "^6.0.0",
+    "puppeteer": "^5.5.0",
+    "typescript": "~4.6.0"
+  },
+  "jest": {
+    "preset": "@wix/jest-yoshi-preset"
+  },
+  "yoshi": {
+    "projectType": "app",
+    "externals": {
+      "react": "React",
+      "react-dom": "ReactDOM",
+      "@wix/fedops-logger": "fedopsLogger"
+    },
+    "hmr": "auto"
+  },
+  "eslintConfig": {
+    "extends": "@wix/eslint-config-yoshi"
+  },
+  "wix": {
+    "artifact": {
+      "groupId": "com.wixpress",
+      "artifactId": "wsr-tutorial-app",
+      "targets": {
+        "static": true,
+        "docker": true
+      }
+    },
+    "validations": {
+      "source": [
+        "lint"
+      ]
+    }
+  },
+  "wallaby": {
+    "autoDetect": true
+  }
+}
