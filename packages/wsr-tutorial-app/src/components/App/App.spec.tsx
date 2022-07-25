@@ -14,8 +14,8 @@ describe('App', () => {
       </Suspense>,
     );
 
-    const el = await findByTestId('app-title');
+    const el = await findByTestId('page-header');
 
-    expect(el.textContent).toBe('app.title');
+    expect(el.textContent).toBe('General Info');
   });
 });

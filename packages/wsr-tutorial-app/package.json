@@ -30,7 +30,8 @@
     "express": "^4.17.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "source-map-support": "^0.5.11"
+    "source-map-support": "^0.5.11",
+    "wix-ui-icons-common": "^2.0.410"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.5",
@@ -46,7 +47,8 @@
     "@wix/yoshi": "^6.0.0",
     "@wix/yoshi-style-dependencies": "^6.0.0",
     "puppeteer": "^5.5.0",
-    "typescript": "~4.6.0"
+    "typescript": "~4.6.0",
+    "wix-style-react": "^10.43.0"
   },
   "jest": {
     "preset": "@wix/jest-yoshi-preset"

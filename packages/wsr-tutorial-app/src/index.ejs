@@ -4,8 +4,27 @@
     <title><%= title %></title>
     <link type="image/png" href="https://www.wix.com/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="<%= baseStaticsUrl %>app<% if (!debug) { %>.min<% } %>.css">
+    <link
+      rel="stylesheet"
+      href="//static.parastorage.com/unpkg/@wix/wix-fonts@1.10.1/madefor.min.css"
+    />
 
     <!-- Run `npx add-sentry -p wsr-tutorial-app -t [TEAM]` to add a valid Sentry link. More information at: https://github.com/wix-private/fed-infra/tree/master/add-sentry -->
+
+    <style>
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      body {
+        margin: 0;
+      }
+    </style>
+    <style>
+      body {
+        background-color: #f0f4f7;
+      }
+    </style>
 
     <script src="https://<%= staticsDomain %>/polyfill/v3/polyfill<% if (!debug) { %>.min<% } %>.js?features=default,es6,es7,es2017,es2018,es2019&flags=gated&unknown=polyfill"></script>
     <script src="https://<%= staticsDomain %>/unpkg-semver/fedops-logger@5/fedops-logger.bundle.min.js"></script>
@@ -23,7 +42,4 @@
       window.__MESSAGES__ = <%- messages %>;
     </script>
     <script src="<%= baseStaticsUrl %>app.bundle<% if (!debug) { %>.min<% } %>.js"></script>
-    <!-- Please remove this template intro script tag -->
-    <script src="https://<%= staticsDomain %>/unpkg-semver/yoshi-template-intro/yoshi-template-intro.umd.js"></script>
-  </body>
 </html>
