@@ -1,0 +1,12 @@
+{
+  "extends": "@wix/yoshi-flow-bm/tsconfig.flow.json",
+  "include": [
+    "__tests__",
+    "src",
+    "dev"
+  ],
+  "files": [
+    "target/generated/flow-types.ts",
+    "src/env.d.ts"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "artifacts_upload": {
+    "patterns": [
+      "**/*.json",
+      "**/*.min.js",
+      "**/*.min.css"
+    ]
+  },
+  "bundle_tests": true,
+  "sled_folder_relative_path_in_repo": "sled"
+}

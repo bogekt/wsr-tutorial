@@ -1,0 +1,40 @@
+[
+  {
+    "appName": "test-bm.pages.index",
+    "notifications": {
+      "slack_channels": [
+        "test-bm-urgent"
+      ]
+    },
+    "deploy_annotations": [
+      "test-bm",
+      "business-manager"
+    ],
+    "petri_annotations": {
+      "scopes": [
+        "business-manager",
+        "bm-apps-817c97f5-9011-471a-aa16-bdea3765211a"
+      ]
+    },
+    "ignore_first_request_roundtrip": true
+  },
+  {
+    "appName": "test-bm-pages-index",
+    "notifications": {
+      "slack_channels": [
+        "test-bm-urgent"
+      ]
+    },
+    "deploy_annotations": [
+      "test-bm",
+      "business-manager"
+    ],
+    "ignore_first_request_roundtrip": true,
+    "petri_annotations": {
+      "scopes": [
+        "business-manager",
+        "bm-apps-817c97f5-9011-471a-aa16-bdea3765211a"
+      ]
+    }
+  }
+]
